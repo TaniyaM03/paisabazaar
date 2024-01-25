@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INFOpg</title>
+    <script src="index.js"></script>
     <style>
         body{
             display: flex;
@@ -12,6 +13,8 @@
             background-color:#cad7fe ;
             width:50%;
             height: 130vh;
+            margin-left: -0.2cm;
+            margin-top: -0.2cm;
             
             
         }
@@ -37,12 +40,12 @@
     width: 100%;
     font-family: Open Sans,sans-serif;
 }
-        }
+        
     </style>
 </head>
 <body>
     <div class="left">
-       <header><img src="./images/paisabazaar-logo.svg" width="154px"></header>
+       <header style="padding-left: 5px;"><img src="./images/paisabazaar-logo.svg" width="154px"></header>
         <div class="mid">
             <h1 style="padding-left:50px;">Personal Loan</h1>
             <ul>
@@ -66,10 +69,11 @@
                 <p style="font-size: 15px; color:grey;"><img src="./images/rightbullets.svg">Contact-less processes</p>
             </ul>
             <p style="color: #D90368;">Mobile Number</p>
-            <form>
-                <input type="tel" placeholder="+91-xxxxxxxxxx">
+            <form id="form">
+                <input type="text" placeholder="Name" size="50" id="jj"><br><br>
+                <input type="tel" placeholder="+91-xxxxxxxxxx" size="50" id="kk">
                 <hr>
-                <button type="submit">Proceed</button>
+                <button type="submit" onclick="storeinput()">Proceed</button>
             </form>
             <p style="font-size: 12px; margin-top:2px;text-align: center;">By clicking on proceed, you have read and agree to the Paisabazaar’s</p>
             <p style="font-size: 12px;color: #1b1dc7;text-align: center;">Credit Report Terms of Use, Paisabazaar’s Terms of Use & Privacy Policy.</p>
